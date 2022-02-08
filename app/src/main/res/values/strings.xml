@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Checkbox Application</string>
+    <string name="playing">Playing</string>
+    <string name="hobby">Hobby</string>
+    <string name="learning">Learning</string>
+    <string name="singing">Singing</string>
 </resources>

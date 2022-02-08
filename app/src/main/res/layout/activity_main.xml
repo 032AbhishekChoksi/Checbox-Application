@@ -6,13 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <CheckBox
+        android:id="@+id/chkPlaying"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="80dp"
+        android:text="@string/playing"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHobby"
+        android:onClick="chechButtonClick"/>
 
+    <CheckBox
+        android:id="@+id/chkSinging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/singing"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/chkPlaying"
+        app:layout_constraintTop_toBottomOf="@+id/chkPlaying"
+        android:onClick="chechButtonClick"/>
+
+    <CheckBox
+        android:id="@+id/chkLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/learning"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/chkSinging"
+        app:layout_constraintTop_toBottomOf="@+id/chkSinging"
+        android:onClick="chechButtonClick"/>
+
+    <TextView
+        android:id="@+id/txtHobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/hobby"
+        android:textColor="#43A047"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
